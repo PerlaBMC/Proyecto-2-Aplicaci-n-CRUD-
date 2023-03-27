@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2do Proyecto Perla Mondragón</title>
+    <link rel="stylesheet" href="./Estilos.css/Styles.css">
+</head>
+<body>
+    <header>
+        <div class="encabezado">
+            <button class="e">Inicio</button>
+            <button class="e">Campus</button>
+            <button class="e">Comunidad</button>
+            <label class="busqueda" for="text">Buscar</label>
+            <input type="text">
+        </div>
+    </header>
+        <div>
+            <h1>Universidad de México</h1>
+        </div>
+        <div class="universidad">
+            <p class="info">Formamos profesionales de nivel internacional. Nuestra oferta educativa está apegada a las tendencias laborales nacionales e internacionales. Estudia en cualquiera de nuestros 29 campus una licenciatura, ingeniería, carrera ejecutiva o
+                 maestría y construye tu historia de éxito en una de las mejores universidades privadas de México</p>
+        </div>
+        <main>
+        <div>
+            <img src="./Imagines/Logo-Posgrado-en-Historia.png" alt="UNAM">
+        </div>
+        <aside class="opciones">
+            <nav>
+            <ul>
+                <li><a href="Licenciaturas">Licenciaturas</a></li>
+                <li><a href="Ciencias de la Salud">Ciencias de la Salud</a></li>
+                <li><a href="Ingenierías">Ingenierías</a></li>
+                <li><a href="Maestrías">Maestrías</a></li>
+            </ul>
+        </nav>
+        </aside>
+    </main>
+<div>
+    <div>
+        <label for="nombreInput" class="form-label">Nombre del alumno</label>
+        <input
+          type="text"
+          class="form-control"
+          id="nombreInput"
+          autocomplete="off"
+        />
+      </div>
+      <div>
+        <label for="LicInput" class="form-label">Licenciatura</label>
+        <input
+          type="text"
+          class="form-control"
+          id="LicInput"
+          autocomplete="off"
+        />
+      </div class = "contenedor">
+      <button
+        id="btnEditar"
+        type="button"
+        class="btn btn-warning"
+        onclick="confirmarEdicion()"
+        style="display: none"
+      >
+        Editar
+      </button>
+      <button
+        id="btnAgregar"
+        type="button"
+        class="btn btn-success"
+        onclick="agregarUsuario()"
+      >
+        Agregar
+      </button>
+      <button
+        type="button"
+        class="btn btn-info"
+        onclick="mostrarUsuarios()"
+        id="mostrar"
+      >
+        Mostrar
+      </button>
+    </form>
+  </article>
+  <article>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Matricula</th>
+          <th scope="col">Nombre</th>
+          <th scope="col">Licenciatura</th>
+        </tr>
+      </thead>
+      <tbody id="cuerpoTabla"></tbody>
+    </table>
+  </article>
+</section>
+</div>
+
+
+
+
+
+
+
+
+<!----     <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Edad</th>
+                <th>Escolaridad</th>
+                <th>Datos</th>
+                <th>Información</th>
+
+            </tr>
+            <tr>
+                <td><input class="form-control" id="nombreInput" autocomplete="off" type="text"></td>
+                <td><input class="form-control" id="apellidoInput" autocomplete="off" type="text"></td>
+                <td><input class="form-control" id="edadInput" autocomplete="off" type="number"></td>
+                <td><input class="form-control" id="escolaridadInput" autocomplete="off" type="text"></td>
+                <td>
+                    <button
+                     class="btn btn-success" 
+                     id="btnAgregar"
+                     type="button"
+                     onclick="agregarUsuario()">
+                     Agregar</button>
+
+                    <button class="verde" onclick="guardarinfo()">Guardar</button>
+                </td>
+                <td>
+                    <button class="rojo" onclick="eliminarinfo()">Eliminar</button>
+                    <button class="azul" onclick="verinfo()">Visualizar</button>
+                </td>
+            </tr>
+        </thead>
+    </table>-->
+    <article class="comentarios">
+        <a>Nos gustaría conconer tu opinión ¡Dejanos tus comentarios!</a>
+    <form>
+        <textarea name="Información" id="" cols="113" rows="10"></textarea>
+    </form>
+    </article>
+</div>
+<footer>
+    <div class="wrapper">
+            <div class="one"><img src="https://www.crece-educacion.com/images/unam.png" alt="logo"></div>
+            <div class="two">
+                <p> Comunicate a los siguientes número para pedir más información:</p>
+            <ul>
+                <li>5558598736</li>
+                <li>5567895432</li>
+                <li>5367890812</li>
+            </ul>
+            </div>
+            <div class="three">
+                <p> O envianos mensaje a los correso:</p>
+                <ul>
+                    <li>universidad@edu.mx </li>
+                    <li>campus.cdmx@edu.mx</li>
+                </ul>
+            </div>
+          </div>
+    </div>
+</footer>
+
+<script src="./localstorage.js"></script>
+    
+</body>
+</html>
